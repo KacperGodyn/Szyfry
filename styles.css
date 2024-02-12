@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0B1E26; /* Custom background color */
+    overflow: hidden;
+  }
+ 
+  .tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  .tile-main {
+    width: 300px;
+    height: 300px;
+    background-color: #345259; /* Custom tile color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #85A0A6; /* Custom text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .tile {
+    width: 400px;
+    height: 500px;
+    background-color: #A2ADE8; /* Custom tile color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #85A0A6; /* Custom text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.2s ease-in-out;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tile:hover {
+    transform: scale(1.05);
+  }
+  
+  .tile-content {
+    text-align: center;
+  }
+  
+  .placeholder {
+    background-color: #cccccc; /* Custom placeholder color */
+  }
+  
+  .cipher-container {
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  #caesar-cipher {
+    background-color: #345259;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+  }
+  
+  
+  .input {
+    min-width: 110px;
+    border-radius: 15px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #7686A6;
+    color: white;
+    cursor: pointer;
+  }
+  .button-imp {
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #0B1E26;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #637AA6;
+  }
+  .button-imp:hover {
+    background-color: #85A0A6;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  #plaintext{
+    height: 80px;
+  }
+  
